@@ -52,7 +52,7 @@ using namespace std;
 const int INF = 1e9 + 7;
 const ll LINF = 1e18;
 
-// গ্লোবাল ফাংশন
+
 bool ok(int i, int j){
     return abs(i/3 - j/3) <= 1 && abs(i%3 - j%3) <= 1;
 }

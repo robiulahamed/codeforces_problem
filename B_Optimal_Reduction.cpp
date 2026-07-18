@@ -29,7 +29,7 @@ void solve(){
                 f=0;
             }
         }
-        if(v[i]<v[i+1] && l==0){
+        if(v[i]<=v[i+1] && l==0){
             l=0;
         }
         else {

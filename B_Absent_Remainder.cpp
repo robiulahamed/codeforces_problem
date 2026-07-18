@@ -7,6 +7,7 @@ const ll LINF = 1e18;
 
 void solve();
 
+#define forn(i, n) for (int i = 0; i < int(n); i++)
 int main(){
     fastio;
     ll t; cin >> t;
@@ -17,19 +18,16 @@ int main(){
 }
 
 void solve(){
-    int n;cin>>n;
-    vector<int>v(n);
-    for(int i=0;  i<n; i++){
-        cin>>v[i];
+    ll n; cin>>n;
+    vector<ll>v(n);
+    int t=n/2;
+    int i=0;
+    forn(i,n)cin>>v[i];
+    sort(v.begin(),v.end());
+    int a=v[0];
+    i=1;
+    while(t--){
+        cout<<v[i]<<" "<<a<<endl;
+        i++;
     }
-    ll a=v[0];
-    for(int i=1; i<n; i++){
-        if(a>v[i]){
-            a=a+v[i];
-        }
-        else
-        a=v[i];
-    }
-    cout<<a<<endl;
-    
 }
